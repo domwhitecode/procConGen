@@ -37,7 +37,7 @@ public class CreateNewMap {
         {
             FileWriter myWriter = new FileWriter("games/dw895game/map3.tmx");
             myWriter.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-            myWriter.write("\t<map version=\"1.0\" orientation=\"orthogonal\" width=\"10\" height=\"10\" tilewidth=\"64\" tileheight=\"64\">\n");
+            myWriter.write("\t<map version=\"1.0\" orientation=\"orthogonal\" width=\"3\" height=\"3\" tilewidth=\"64\" tileheight=\"64\">\n");
             myWriter.write("\t\t<properties>\n");
             myWriter.write("\t\t\t<property name=\"name\" value=\"Blackrock\"/>\n");
             myWriter.write("\t\t</properties>\n");
@@ -47,10 +47,23 @@ public class CreateNewMap {
             myWriter.write("\t\t<tileset firstgid=\"211\" name=\"walls\" tilewidth=\"64\" tileheight=\"64\">\n");
             myWriter.write("\t\t\t<image source=\"graphics2x-walls.png\" width=\"128\" height=\"1024\"/>\n");
             myWriter.write("\t\t</tileset>\n");
+            myWriter.write("\t\t <layer name=\"Tile Layer 1\" width=\"3\" height=\"3\">\n");
+            myWriter.write("\t\t\t<data>\n");
+            myWriter.write("\t\t\t\t<tile gid=\"57\"/>\n" +
+                    "\t\t\t\t<tile gid=\"57\"/>\n" +
+                    "\t\t\t\t<tile gid=\"57\"/>\n" +
+                    "\t\t\t\t<tile gid=\"57\"/>\n" +
+                    "\t\t\t\t<tile gid=\"57\"/>\n" +
+                    "\t\t\t\t<tile gid=\"57\"/>\n" +
+                    "\t\t\t\t<tile gid=\"57\"/>\n" +
+                    "\t\t\t\t<tile gid=\"57\"/>\n" +
+                    "\t\t\t\t<tile gid=\"57\"/>\n" +
+                    "\t\t\t\t<tile gid=\"57\"/>\n");
+            myWriter.write("\t\t\t</data>\n");
+            myWriter.write("\t\t</layer>\n");
+            myWriter.write("\t</map>\n");
 
-
-
-
+            // Write gid's via a function (Kruskals?")
 
 
 
