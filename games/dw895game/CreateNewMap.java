@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class CreateNewMap {
@@ -31,10 +32,27 @@ public class CreateNewMap {
         }
     }
 
+    public static void writeToMapFile(){
+        try
+        {
+            FileWriter myWriter = new FileWriter("games/dw895game/map3.tmx");
+            myWriter.write("howdy");
+            myWriter.close();
+            System.out.println("Successfully wrote to the file.");
+        }
+        catch (IOException e)
+        {
+            System.out.println("write error");
+            e.printStackTrace();
+        }
+
+    }
+
     public static void main(String args[]){
         System.out.println("hey");
 
         CreateNewMap();
+        writeToMapFile();
     }
 }
 
