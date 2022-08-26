@@ -193,7 +193,7 @@
 	<characterDefinition file="players.xml"/>
 	<objectDefinition file="objects.xml"/>
 
-	<map file="map2.tmx"/>
+	<map file="map3.tmx"/>
 
 	<player class="Warrior" x="8" y="7" map="0"/>	
 
